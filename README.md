@@ -1,1 +1,1 @@
-# MVC-Drawing-App
+# Banking app
