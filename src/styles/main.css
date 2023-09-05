@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+#toolbarContainer {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #91C8E4;
+    height: 80px;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+}
+
+#toolbarContainer .toolsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    list-style: none;
+}
+
+.toolBarItems {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.toolBarItems i {
+    font-size: 35px;
+}
+
+.toolBarItems span {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.toolBarItems .colorPicker {
+    opacity: 0;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 1px;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.active {
+    color: white;
+}

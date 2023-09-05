@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="toolbarContainer">
+        <ul class="toolsContainer">
+            <li class="toolBarItems">
+                <div class="wrapper" id="eraser">
+                    <i class="fa-solid fa-eraser"></i>
+                    <span class="eraserText">Eraser</span>
+                </div>
+                <input class="eraser" type="range" min="5" max="40">
+            </li>
+            <li class="toolBarItems">
+                <div class="wrapper active" id="brush">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <span class="BrushText">Brush</span>
+                </div>
+                <input class="brush" type="range" min="1" max="30">
+            </li>
+            <li class="toolBarItems">
+                <div class="wrapper" id="palette">
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <input class="colorPicker" type="color">
+                    <span>Pick Color</span>
+                </div>
+
+            </li>
+            <li class="toolBarItems">
+                <div class="wrapper" id="canvasClear"><i class="fa-solid fa-display"></i>
+                    <span>Clear Canvas</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
